@@ -11,6 +11,7 @@ h2 {
 }
 
 div.main-body {
+	width: 400px;
 	background-color: lightblue;
-	vertical-align: middle
+	vertical-align: middle;
 }
