@@ -16,7 +16,7 @@ div.main-body {
 	vertical-align: middle;
 }
 
-#wrapper{
+div.wrapper{
 	position:relative;
 	width:1150px;
 	min-height:300px;
