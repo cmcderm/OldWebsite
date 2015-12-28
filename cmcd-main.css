@@ -29,8 +29,8 @@ p {
 
 .wrapper{
 	background-color: #ADD8E6;
-	opacity: 0.6;
-    filter: alpha(opacity=60);
+	opacity: 0.3;
+    filter: alpha(opacity=.30);
 	position:relative;
 	width:1150px;
 	min-height:300px;
