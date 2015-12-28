@@ -10,13 +10,13 @@ h2 {
 	color: navy;
 }
 
-div.main-body {
+.main-body {
 	width: 400px;
 	background-color: lightblue;
 	vertical-align: middle;
 }
 
-div.wrapper{
+.wrapper{
 	position:relative;
 	width:1150px;
 	min-height:300px;
