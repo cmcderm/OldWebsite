@@ -6,15 +6,16 @@ body {
 }
 
 h1{
-	text-align: center;
 	color: navy;
 	font-size:4em;
-	letter-spacing:-.06em;
 	line-height:1.1;
 	position:relative
 }
 
 h2 {
+	font-size:2em;
+	line-height:1.1;
+	position:relative;
 	color: navy;
 }
 
@@ -30,7 +31,7 @@ p {
 .wrapper{
 	background-color: #ADD8E6;
 	opacity: 0.95;
-    filter: alpha(opacity=.95);
+	filter: alpha(opacity=.95);
 	position:relative;
 	width:1150px;
 	min-height:300px;
