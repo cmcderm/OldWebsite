@@ -1,5 +1,6 @@
 body {
-	background:url("http://connormcdermott.me/images/screenshot.png");
+	background-image:url("http://connormcdermott.me/images/screenshot.png");
+	background-repeat:no-repeat;
 }
 
 h1{
