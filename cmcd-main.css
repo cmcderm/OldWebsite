@@ -28,7 +28,9 @@ p {
 }
 
 #wrapper{
-	background-color: #ADD8E67F;
+	background-color: #ADD8E6;
+	opacity: 0.6;
+    filter: alpha(opacity=60);
 	position:relative;
 	width:1150px;
 	min-height:300px;
