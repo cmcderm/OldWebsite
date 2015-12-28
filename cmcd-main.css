@@ -2,8 +2,12 @@ body {
 	background-color: green;
 }
 
-h1 {
+h1{
 	color: navy;
+	font-size:4em;
+	letter-spacing:-.06em;
+	line-height:1.1;
+	position:relative
 }
 
 h2 {
@@ -16,6 +20,7 @@ h2 {
 }
 
 #wrapper{
+	background-color: lightblue;
 	position:relative;
 	width:1150px;
 	min-height:300px;
@@ -24,3 +29,4 @@ h2 {
 	clear:both;
 	z-index:1;
 }
+
