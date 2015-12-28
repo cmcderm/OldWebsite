@@ -2,6 +2,7 @@ body {
 	background-image:url("http://connormcdermott.me/images/screenshot2.png");
 	background-repeat:no-repeat;
 	background-size:cover;
+	font-family:"Avenir Next",Avenir,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
 }
 
 h1{
