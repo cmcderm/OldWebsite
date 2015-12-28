@@ -6,6 +6,7 @@ body {
 }
 
 h1{
+	text-align: center;
 	color: navy;
 	font-size:4em;
 	line-height:1.1;
@@ -47,5 +48,7 @@ div.wrapper p {
     color: #000000;
 }
 
-.
+.item{
+	padding-left:100px;
+}
 
