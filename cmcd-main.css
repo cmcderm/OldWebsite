@@ -1,5 +1,5 @@
 body {
-	background-color: lightblue;
+	background-color: green;
 }
 
 h1 {
@@ -10,13 +10,12 @@ h2 {
 	color: navy;
 }
 
-.main-body {
-	width: 400px;
+#main-body {
 	background-color: lightblue;
 	vertical-align: middle;
 }
 
-.wrapper{
+#wrapper{
 	position:relative;
 	width:1150px;
 	min-height:300px;
