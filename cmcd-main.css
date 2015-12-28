@@ -1,5 +1,5 @@
 body {
-	background-image:url("http://connormcdermott.me/images/screenshot.png");
+	background-image:url("http://connormcdermott.me/images/screenshot2.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -14,6 +14,10 @@ h1{
 
 h2 {
 	color: navy;
+}
+
+p {
+	padding-left:20px;
 }
 
 #main-body {
