@@ -27,7 +27,7 @@ p {
 	vertical-align: middle;
 }
 
-#wrapper{
+.wrapper{
 	background-color: #ADD8E6;
 	opacity: 0.6;
     filter: alpha(opacity=60);
@@ -38,5 +38,11 @@ p {
 	padding:0;
 	clear:both;
 	z-index:1;
+}
+
+div.wrapper p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
 }
 
