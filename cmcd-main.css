@@ -54,8 +54,11 @@ div.wrapper p {
 }
 
 .itemTitle {
-	margin-bottom:4px;
-	padding-left:8px;
+	font-size:16px;
+	margin:0px;
+	margin-left:8px;
+	margin-top:4px;
+	padding-left:0px;
 }
 
 .itemImg {
