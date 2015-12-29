@@ -22,7 +22,7 @@ h2 {
 }
 
 p {
-	padding-left:100px;
+	padding:0px;
 }
 
 #main-body {
@@ -51,6 +51,10 @@ div.wrapper p {
 
 .item{
 	padding-left:100px;
+}
+
+.itemImg {
+	
 }
 
 .itemDesc {
