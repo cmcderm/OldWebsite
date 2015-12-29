@@ -21,10 +21,6 @@ h2 {
 	padding-left:75px;
 }
 
-p {
-	padding-left:100px;
-}
-
 #main-body {
 	background-color: lightblue;
 	vertical-align: middle;
@@ -50,7 +46,7 @@ div.wrapper p {
 }
 
 .item{
-	padding-left:100px;
+	
 }
 
 .itemDesc {
