@@ -760,6 +760,8 @@ footer .owner p a {
 
 .markdown-body h3 {
   font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 .markdown-body h4 {
