@@ -477,6 +477,12 @@ h3{
   font-family: 'Press Start 2P', cursive;
 }
 
+.markdown-body h4{
+	font-size: 18px;
+	color: #4d9014;
+	margin: 0px;
+}
+
 a.soloLink{
 	font-family: 'Press Start 2P', cursive;
 	text-align: center;
