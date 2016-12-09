@@ -473,6 +473,10 @@ h2.jobdesc {
 	margin-right:10px;
 }
 
+h3{
+  font-family: 'Press Start 2P', cursive;
+}
+
 #container {
   border: 1px solid #2a2a2a;
   background: #ddd url(../images/pattern.png);
@@ -480,9 +484,11 @@ h2.jobdesc {
 }
 
 p.tagline {
-  padding: 20px 20px 0;
-  color: #fff;
+  padding: 0px 0px 0px;
+  text-align:center;
+  color: #FFFFFF;
   font-size: 17px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 #main {
