@@ -502,6 +502,10 @@ p.tagline {
   font-family: 'Press Start 2P', cursive;
 }
 
+img.subImage {
+	max-height: 75px; 
+}
+
 #main {
   margin-top: 20px;
   padding: 0 20px 90px;
