@@ -14,7 +14,7 @@ function draw() {
 	text('Draw!', 10, 30);
 	pop();
 	if(mouseIsPressed){
-		boxes.push(new Box(mouseX, mouseY, random(10, 20)));
+		boxes.push(new Box(mouseX, mouseY, random(30, 40)));
 	}
   
 	for(let box of boxes){
