@@ -11,7 +11,7 @@ class Paddle{
 		if(this.isPlayer){
 			this.y = mouseY;
 		} else {
-			//AI
+			this.y = ball.y;
 		}
 	}
 	

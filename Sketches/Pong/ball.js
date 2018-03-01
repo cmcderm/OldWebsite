@@ -8,7 +8,7 @@ class Ball{
 	}
 	
 	checkCollision(p){ //checks if the ball is hitting the chosen paddle
-		let part1 = this.x - this.size/2 < p.x + p.width;
+		/* let part1 = this.x - this.size/2 < p.x + p.width;
 		if(part1){
 			background(0,255,0);
 		}
@@ -24,16 +24,31 @@ class Ball{
 		if(part4){
 			background(255,255,255);
 		}
-		return  part1 && part2;
+		return  part1 && part2; */
+		return this.x < p.x + p.width && this.x + this.size > p.x && this.y < p.y + p.height && this.size + this.y > p.y;
+	}
+	
+	reset(){
+		this.x = width/2;
+		this.y = height/2;
+		this.vel = createVector(this.vel.x * -1, random(-.75, .75));
 	}
 	
 	move(){
-		if(this.y < height || this.y > height){
+		if(this.y < 0 || this.y > height){
 			this.vel.y = -this.vel.y;
-		} else if(checkCollision(paddle1)){
+		} else if(this.checkCollision(paddle1)){
+			console.log("heyyy");
 			this.vel.x = -this.vel.x;
-		} else if(checkCollision(paddle2)){
+		} else if(this.checkCollision(paddle2)){
+			console.log("oiiii");
 			this.vel.x = -this.vel.x;
+		} else if(this.x < 0){
+			score(1);
+			this.reset();
+		} else if(this.x > width){
+			score(2);
+			this.reset();
 		}
 		this.x += this.vel.x * this.speed;
 		this.y += this.vel.y * this.speed;
