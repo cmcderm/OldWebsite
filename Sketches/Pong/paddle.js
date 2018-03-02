@@ -9,8 +9,10 @@ class Paddle{
 	
 	move(){
 		if(this.isPlayer){
+			this.x = width * .05;
 			this.y = mouseY;
 		} else {
+			this.x = width * .95;
 			this.y = ball.y;
 		}
 	}

@@ -8,13 +8,19 @@ let p1Score = 0;
 let p2Score = 0;
 
 function setup() {
-	createCanvas(600, 400);
+	
 
-	paddle1 = new Paddle(.10 * width, true);
-	paddle2 = new Paddle(.90 * width, false)
+	paddle1 = new Paddle(.05 * width, true);
+	paddle2 = new Paddle(.95 * width, false);
 	ball = new Ball()
+	windowResized();
 	rectMode(CENTER);
 	noStroke();
+}
+
+function windowResized(){
+	createCanvas(windowWidth * .98, min(windowWidth * .5, windowHeight*.98));
+	ball.reset();
 }
 
 function draw() {
@@ -53,7 +59,7 @@ function drawBoard(){
 	stroke(255);
 	fill(255);
 	textSize(35);
-	text(p1Score.toString(), width * .25, height * .1);
-	text(p2Score.toString(), width * .75, height * .1);
+	text(p2Score.toString(), width * .25, height * .1);
+	text(p1Score.toString(), width * .75, height * .1);
 	pop();
 }

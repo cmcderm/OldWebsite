@@ -3,7 +3,7 @@ class Ball{
 		this.x = width/2;
 		this.y = height/2;
 		this.vel = createVector(-1, random(-.75, .75));
-		this.speed = 4;
+		this.speed = .01 * windowWidth;
 		this.size = 10;
 	}
 	
@@ -32,6 +32,7 @@ class Ball{
 		this.x = width/2;
 		this.y = height/2;
 		this.vel = createVector(this.vel.x * -1, random(-.75, .75));
+		this.speed = .01 * windowWidth;
 	}
 	
 	calcNewYVal(p){
