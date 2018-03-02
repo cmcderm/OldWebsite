@@ -3,7 +3,7 @@ class Ball{
 		this.x = width/2;
 		this.y = height/2;
 		this.vel = createVector(-1, random(-.75, .75));
-		this.speed = 2.5;
+		this.speed = 4;
 		this.size = 10;
 	}
 	
@@ -25,7 +25,7 @@ class Ball{
 			background(255,255,255);
 		}
 		return  part1 && part2; */
-		return this.x < p.x + p.width && this.x + this.size > p.x && this.y < p.y + p.height && this.size + this.y > p.y;
+		return this.x < p.x + p.width && this.x + this.size > p.x && this.y < p.y + p.height/2 && this.size + this.y > p.y - p.height/2;
 	}
 	
 	reset(){
@@ -34,15 +34,22 @@ class Ball{
 		this.vel = createVector(this.vel.x * -1, random(-.75, .75));
 	}
 	
+	calcNewYVal(p){
+		let distY = p.y - this.y
+		return map(distY, -p.height/2, p.height/2, .9, -.9);
+	}
+	
 	move(){
 		if(this.y < 0 || this.y > height){
 			this.vel.y = -this.vel.y;
-		} else if(this.checkCollision(paddle1)){
+		} else if(this.checkCollision(paddle1) && this.vel.x < 0){
 			console.log("heyyy");
 			this.vel.x = -this.vel.x;
-		} else if(this.checkCollision(paddle2)){
+			this.vel.y = this.calcNewYVal(paddle1)
+		} else if(this.checkCollision(paddle2) && this.vel.x > 0){
 			console.log("oiiii");
 			this.vel.x = -this.vel.x;
+			this.vel.y = this.calcNewYVal(paddle2)
 		} else if(this.x < 0){
 			score(1);
 			this.reset();
